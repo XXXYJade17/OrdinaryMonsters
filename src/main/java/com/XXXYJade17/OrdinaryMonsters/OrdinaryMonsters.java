@@ -11,6 +11,5 @@ public class OrdinaryMonsters {
 
     public OrdinaryMonsters(IEventBus bus, ModContainer container) {
         MonstersRegistry.register(bus);
-
     }
 }
