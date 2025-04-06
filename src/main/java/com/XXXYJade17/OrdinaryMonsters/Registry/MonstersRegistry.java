@@ -15,7 +15,9 @@ public class MonstersRegistry {
 
     public static final Supplier<EntityType<FirstMonster>> FIRST_MONSTER =
             ENTITY_TYPES.register("first_monster",
-                    () -> EntityType.Builder.of(FirstMonster::new, MobCategory.MISC).build("first_monster"));
+                    () -> EntityType.Builder.of(FirstMonster::new, MobCategory.MISC)
+                            .sized(0.6f, 1.95f)
+                            .build("first_monster"));
 
     public static void register(IEventBus eventBus){
         ENTITY_TYPES.register(eventBus);
