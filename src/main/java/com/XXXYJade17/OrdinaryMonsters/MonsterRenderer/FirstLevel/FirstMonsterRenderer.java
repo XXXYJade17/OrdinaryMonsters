@@ -16,5 +16,4 @@ public class FirstMonsterRenderer extends MobRenderer<FirstMonster, FirstMonster
     public ResourceLocation getTextureLocation(FirstMonster entity) {
         return new ResourceLocation(OrdinaryMonsters.MODID,"textures/entity/first_monster.png");
     }
-
 }
