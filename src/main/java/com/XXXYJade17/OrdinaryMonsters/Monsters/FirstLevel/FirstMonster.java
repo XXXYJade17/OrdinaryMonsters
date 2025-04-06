@@ -27,12 +27,10 @@ public class FirstMonster extends Monster implements IMoreAttributes {
 
     @Override
     protected void registerGoals() {
-        // 这里添加的是我们自己的Goal
         this.goalSelector.addGoal(0,new FirstMonsterGoal(this));
     }
 
     public static AttributeSupplier.Builder createAttributes() {
-        System.out.println("12345");
         return Monster.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 10.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.25D);

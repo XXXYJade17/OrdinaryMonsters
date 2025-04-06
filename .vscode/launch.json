@@ -1,0 +1,101 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - OrdinaryMonsters",
+        "order": 0
+      },
+      "projectName": "OrdinaryMonsters",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@D:\\yckin.000\\桌面\\OrdinaryMonsters\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@D:\\yckin.000\\桌面\\OrdinaryMonsters\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dordinarymonsters%%D:\\yckin.000\\桌面\\OrdinaryMonsters\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {
+        "MOD_CLASSES": "ordinarymonsters%%D:\\yckin.000\\桌面\\OrdinaryMonsters\\bin\\main"
+      },
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Data",
+      "presentation": {
+        "group": "Mod Development - OrdinaryMonsters",
+        "order": 1
+      },
+      "projectName": "OrdinaryMonsters",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@D:\\yckin.000\\桌面\\OrdinaryMonsters\\build\\moddev\\dataRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@D:\\yckin.000\\桌面\\OrdinaryMonsters\\build\\moddev\\dataRunVmArgs.txt",
+        "-Dfml.modFolders\u003dordinarymonsters%%D:\\yckin.000\\桌面\\OrdinaryMonsters\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {
+        "MOD_CLASSES": "ordinarymonsters%%D:\\yckin.000\\桌面\\OrdinaryMonsters\\bin\\main"
+      },
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "GameTestServer",
+      "presentation": {
+        "group": "Mod Development - OrdinaryMonsters",
+        "order": 2
+      },
+      "projectName": "OrdinaryMonsters",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@D:\\yckin.000\\桌面\\OrdinaryMonsters\\build\\moddev\\gameTestServerRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@D:\\yckin.000\\桌面\\OrdinaryMonsters\\build\\moddev\\gameTestServerRunVmArgs.txt",
+        "-Dfml.modFolders\u003dordinarymonsters%%D:\\yckin.000\\桌面\\OrdinaryMonsters\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {
+        "MOD_CLASSES": "ordinarymonsters%%D:\\yckin.000\\桌面\\OrdinaryMonsters\\bin\\main"
+      },
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Server",
+      "presentation": {
+        "group": "Mod Development - OrdinaryMonsters",
+        "order": 3
+      },
+      "projectName": "OrdinaryMonsters",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@D:\\yckin.000\\桌面\\OrdinaryMonsters\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@D:\\yckin.000\\桌面\\OrdinaryMonsters\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dordinarymonsters%%D:\\yckin.000\\桌面\\OrdinaryMonsters\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {
+        "MOD_CLASSES": "ordinarymonsters%%D:\\yckin.000\\桌面\\OrdinaryMonsters\\bin\\main"
+      },
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}
