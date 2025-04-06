@@ -5,20 +5,25 @@ import com.XXXYJade17.OrdinaryMonsters.MonsterRenderer.FirstLevel.FirstMonsterRe
 import com.XXXYJade17.OrdinaryMonsters.Monsters.FirstLevel.FirstMonster;
 import com.XXXYJade17.OrdinaryMonsters.OrdinaryMonsters;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 
-@Mod.EventBusSubscriber(modid = OrdinaryMonsters.MODID, bus = Mod.EventBusSubscriber.Bus.MOD,value = Dist.CLIENT)
+@Mod.EventBusSubscriber(modid = OrdinaryMonsters.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class EventRegistry {
+    @OnlyIn(Dist.CLIENT)
     @SubscribeEvent
     public static void registerEntityLayers(EntityRenderersEvent.RegisterLayerDefinitions evt) {
         evt.registerLayerDefinition(FirstMonsterModel.LAYER_LOCATION, FirstMonsterModel::createBodyLayer);
     }
 
+    @OnlyIn(Dist.CLIENT)
     @SubscribeEvent
     public static void onClientEvent(FMLClientSetupEvent event){
         event.enqueueWork(()->{
