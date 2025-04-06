@@ -10,6 +10,8 @@ import com.XXXYJade17.OrdinaryMonsters.MonsterGoals.FirstLevel.FirstMonsterGoal;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.Level;
 
@@ -27,6 +29,11 @@ public class FirstMonster extends Monster implements IMoreAttributes {
     protected void registerGoals() {
         // 这里添加的是我们自己的Goal
         this.goalSelector.addGoal(0,new FirstMonsterGoal(this));
+    }
+
+    public static AttributeSupplier.Builder createAttributes() {
+        return Monster.createMonsterAttributes()
+                .add(Attributes.MAX_HEALTH, 10.0D);
     }
 
     @Override
