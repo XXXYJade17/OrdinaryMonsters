@@ -30,8 +30,8 @@ public class FirstMonsterModel extends EntityModel<FirstMonster> {
 
     @Override
     public void setupAnim(FirstMonster entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-        this.root.yRot = netHeadYaw * ((float) Math.PI / 180F);
-        this.root.xRot = headPitch * ((float) Math.PI / 180F);
+        root.yRot = netHeadYaw * ((float) Math.PI / 180F);
+        root.xRot = headPitch * ((float) Math.PI / 180F);
     }
 
     @Override
